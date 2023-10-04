@@ -5,12 +5,12 @@ import schemas from './sanity/schemas'
 
 const config = defineConfig({
     projectId: "2245b53v",
-     dataset: 'production',
-     title: 'personal website',
-     apiVersion: '2023-10-03',
-     basePath: '/admin',
-     plugins: [deskTool()],
-     schema: {types: schemas}
+    dataset: 'production',
+    title: 'personal website',
+    apiVersion: '2023-10-03',
+    basePath: '/admin',
+    plugins: [deskTool()],
+    schema: {types: schemas}
 })
 
 export default config
