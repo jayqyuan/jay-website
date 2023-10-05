@@ -3,6 +3,8 @@ import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { ThemeProvider } from './theme-provider'
+import { ThemeSwitcher } from './components/ThemeSwitcher'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +21,8 @@ export default async function RootLayout({
   const pages = await getPages()
   return (
     <html lang="en">
-      <body className='max-w-3xl mx-auto py-10'>
+      <ThemeProvider>
+      <body className={`${inter.className} max-w-3xl mx-auto py-10 `}>
         <header className='flex items-center justify-between'>
           <Link href='/' className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold'>
             Jay
@@ -29,11 +32,12 @@ export default async function RootLayout({
               <Link key={page._id} href={`/${page.slug}`} className='hover:underline'>
                 {page.title}
               </Link>
-            ))}
+            ))}<ThemeSwitcher/>
           </div>
         </header>
         <main className='py-20'>{children}</main>
         </body>
+        </ThemeProvider>
     </html>
   )
 }
