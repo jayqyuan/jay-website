@@ -26,9 +26,9 @@ export default async function Home() {
 							key={project._id}
 							className='border-2 border-gray-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition'
 						>
-							{project.image && (
+							{project.cover && (
 								<Image
-									src={project.image}
+									src={project.cover}
 									alt={project.name}
 									width={750}
 									height={300}

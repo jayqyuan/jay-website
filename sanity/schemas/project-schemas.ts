@@ -29,6 +29,20 @@ const project = {
 
         },
         {
+            name: 'cover',
+            title: 'Cover',
+            type: 'image',
+            options: {hotspot: true},
+            fields:[
+                {
+                    name: 'alt',
+                    title: 'Alt',
+                    type: 'string'
+                }
+            ]
+
+        },
+        {
             name: 'url',
             title: 'URL',
             type: 'url'

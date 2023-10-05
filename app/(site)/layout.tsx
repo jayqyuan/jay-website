@@ -21,8 +21,8 @@ export default async function RootLayout({
   const pages = await getPages()
   return (
     <html lang="en">
-      <ThemeProvider>
-      <body className={`${inter.className} max-w-3xl mx-auto py-10 `}>
+      <body className={`${inter.className} max-w-3xl mx-auto py-10 bg-slate-50 dark:bg-slate-700`}>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <header className='flex items-center justify-between'>
           <Link href='/' className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold'>
             Jay
@@ -32,12 +32,14 @@ export default async function RootLayout({
               <Link key={page._id} href={`/${page.slug}`} className='hover:underline'>
                 {page.title}
               </Link>
-            ))}<ThemeSwitcher/>
+            ))}
+            <ThemeSwitcher/>
           </div>
         </header>
         <main className='py-20'>{children}</main>
-        </body>
         </ThemeProvider>
+        </body>
+        
     </html>
   )
 }
