@@ -21,7 +21,7 @@ export default async function RootLayout({
   const pages = await getPages()
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-3xl mx-auto py-10 bg-slate-100 dark:bg-gradient-to-r from-slate-400 to-slate-900`}>
+      <body className={`${inter.className} max-w-3xl mx-auto py-10 bg-slate-100 dark:bg-gradient-to-r from-slate-900 to-gray-950`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <header className='flex items-center justify-between'>
           <Link href='/' className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold'>
@@ -40,7 +40,7 @@ export default async function RootLayout({
         <main className='py-20'>{children}</main>
         </ThemeProvider>
         <footer>
-          
+
         </footer>
         </body>
         
