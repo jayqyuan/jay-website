@@ -7,7 +7,7 @@ const config = defineConfig({
     projectId: "2245b53v",
     dataset: 'production',
     title: 'jay-website',
-    apiVersion: '2023-10-03',
+    apiVersion: '2023-10-09',
     basePath: '/admin',
     plugins: [deskTool()],
     schema: {types: schemas}
