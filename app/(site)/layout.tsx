@@ -22,11 +22,11 @@ export default async function RootLayout({
   const pages = await getPages()
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-3xl mx-auto py-10 bg-stone-100 dark:bg-gradient-to-r from-slate-900 to-gray-950`}>
+      <body className={`${inter.className} max-w-3xl mx-auto py-10 bg-stone-300 dark:bg-gradient-to-r from-slate-800 to-gray-950`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <header className='flex items-center justify-between'>
           <Link href='/'>
-            <Image src='/jylogo.png' width={35} height={35} alt='logo' className='transition-transform hover:scale-110 transofmr duration-300 east-in-out'/>
+            <Image src='/jylogo.png' width={40} height={40} alt='logo' className='transition-transform hover:scale-110 transform duration-300 ease-in-out'/>
           </Link>
           <div className='flex items-center gap-3 text-m text-gray-600 dark:text-slate-200'>
             {pages.map((page)=>(
