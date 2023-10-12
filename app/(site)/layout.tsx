@@ -26,7 +26,7 @@ export default async function RootLayout({
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <header className='flex items-center justify-between'>
           <Link href='/'>
-            <Image src='/jylogo.png' width={40} height={40} alt='logo' className='transition-transform hover:scale-110 transform duration-300 ease-in-out'/>
+            <Image src='/jylogo.png' width={50} height={50} alt='logo' className='transition-transform hover:scale-110 transform duration-300 ease-in-out'/>
           </Link>
           <div className='flex items-center gap-3 text-m text-gray-600 dark:text-slate-200'>
             {pages.map((page)=>(
