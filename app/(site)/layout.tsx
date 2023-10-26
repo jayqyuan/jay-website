@@ -35,11 +35,11 @@ export default async function RootLayout({
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
               </a>
               <a href='#my-work' className='m-2 relative group'>
-                <span className=''>My Work</span>
+                <span className=''>My work</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
               </a>
               <a href='#contact' className='m-2 relative group'>
-                <span className=''>get in touch</span>
+                <span className=''>Get in touch</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
               </a>
             <ThemeSwitcher/>
