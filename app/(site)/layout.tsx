@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { ThemeProvider } from './theme-provider'
 import { ThemeSwitcher } from './components/ThemeSwitcher'
 import Image from 'next/image'
+import Contact from './components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,8 +49,8 @@ export default async function RootLayout({
         </div>
         <main className='py-20 max-w-3xl mx-auto'>{children}</main>
         </ThemeProvider>
-        <footer>
-
+        <footer id='contact'>
+          <Contact/>
         </footer>
         </body>
         

@@ -27,7 +27,6 @@ export default async function Home() {
 						<ProjectCard key={project._id} project = {project}/>
 					))}
 				</div>
-				<h2 className='mt-24 font-bold text-gray-700 text-3xl dark:text-slate-200' id="contact">Get in Touch!</h2>
 		</main>
 	);
 }
