@@ -9,4 +9,5 @@ export type Project = {
     cover:string;
     url: string;
     content: PortableTextBlock[];
+    tech: string[];
 }

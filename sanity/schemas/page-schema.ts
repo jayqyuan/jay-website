@@ -24,7 +24,7 @@ const page = {
             of:[
                 {type:'block'}
             ]
-        }
+        },
     ]
 }
 

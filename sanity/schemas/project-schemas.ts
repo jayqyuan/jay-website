@@ -53,6 +53,14 @@ const project = {
             type: 'array',
             of:[{type: 'block'}]
 
+        },
+        {
+            name: 'tech',
+            title: 'Tech',
+            type: 'array',
+            of:[
+                {type: 'string'}
+            ]
         }
     ]
 }

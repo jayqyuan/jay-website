@@ -1,14 +1,16 @@
 import { getPages } from '@/sanity/sanity-utils'
 import '../globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Link from 'next/link'
 import { ThemeProvider } from './theme-provider'
 import { ThemeSwitcher } from './components/ThemeSwitcher'
 import Image from 'next/image'
 import Contact from './components/Contact'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ 
+  weight: '200',
+  subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Jay Yuan | Software Engineer ',
@@ -23,7 +25,7 @@ export default async function RootLayout({
   const pages = await getPages()
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-stone-300 dark:bg-gradient-to-r from-slate-800 to-gray-950`}>
+      <body className={`${poppins.className} bg-stone-300 dark:bg-gradient-to-r from-slate-800 to-gray-950`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <div className='sticky top-0 z-50 p-10 bg-stone-300 dark:bg-slate-800 bg-opacity-70 dark:bg-opacity-70' >
         <header className='flex items-center justify-between bg-opacity-100'>
@@ -33,15 +35,15 @@ export default async function RootLayout({
           <div className='flex items-center gap-3 text-m text-gray-600 dark:text-slate-200'>
               <a href='#about-me' className='m-2 relative group'>
                 <span className=''>Me</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
               </a>
               <a href='#my-work' className='m-2 relative group'>
                 <span className=''>My work</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
               </a>
               <a href='#contact' className='m-2 relative group'>
                 <span className=''>Get in touch</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-slate-100 transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
               </a>
             <ThemeSwitcher/>
           </div>
