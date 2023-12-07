@@ -37,8 +37,12 @@ export default function Contact() {
 					<GitHubIcon className='h-10 w-10 hover:scale-125 transition-all duration-500 cursor-pointer' />
 				</a>
                 <a target='_blank' href='https://calendly.com/jayqyuan/meet-with-jay'>
-					<CalendarTodayIcon className='h-10 w-10 hover:scale-125 transition-all duration-500 cursor-pointer' />
+					<CalendarTodayIcon className='h-10 w-10 hover:scale-125 transition-all duration-500 cursor-pointer'
+					data-tooltip-id='calendlyLink'
+					data-tooltip-content='Click to reschedule a chat!'
+					data-tooltip-place='top' />
 				</a>
+				<Tooltip id="calendlyLink"/>
 				<EmailIcon
 					onClick={CopytoClipboard}
 					className='h-10 w-10 hover:scale-125 transition-all duration-500 cursor-pointer'
@@ -49,6 +53,7 @@ export default function Contact() {
 				<Tooltip id="email-copied"/>
                 
 				<style jsx global>{`
+					.calendlyLink,
 					.email-copied {
 						background-color: #333;
 						color: #fff;
