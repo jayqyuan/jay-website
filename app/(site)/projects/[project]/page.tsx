@@ -22,13 +22,13 @@ export default async function Project({ params }: Props) {
 					title='View Project'
 					target='_blank'
 					rel='noopener noreferrer'
-                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition"
+                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap dark:hover:bg-teal-500 hover:bg-teal-500 hover:text-pink-100 transition"
 				>
 					View Project
 				</a>
 			</header>
             {/* content section */}
-            <div className="text-lg text-gray-700 mt-5">
+            <div className="text-lg mt-5">
                 <PortableText value={project.content}/>
             </div>
 
