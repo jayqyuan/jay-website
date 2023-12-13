@@ -49,9 +49,9 @@ export default async function RootLayout({
           </div>
         </header>
         </div>
-        <main className='py-20 max-w-5xl md:mx-3 lg:mx-3 sm:mx-3'>{children}</main>
+        <main className='py-20 max-w-5xl md:mx-2 lg:mx-auto sm:mx-2'>{children}</main>
         </ThemeProvider>
-        <footer id='contact'>
+        <footer id='contact' className='max-w-5xl mx-auto'>
           <Contact/>
         </footer>
         </body>
