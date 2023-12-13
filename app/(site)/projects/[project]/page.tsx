@@ -13,7 +13,7 @@ export default async function Project({ params }: Props) {
 
 	return (
 		<div>
-			<header className='flex items-center justify-between'>
+			<header className='flex flex-col items-center justify-between sm:flex-row'>
 				<h1 className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-7xl font-extrabold'>
 					{project.name}
 				</h1>
@@ -22,7 +22,7 @@ export default async function Project({ params }: Props) {
 					title='View Project'
 					target='_blank'
 					rel='noopener noreferrer'
-                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap dark:hover:bg-teal-500 hover:bg-teal-500 hover:text-pink-100 transition"
+                    className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap dark:hover:bg-teal-500 hover:bg-teal-500 hover:text-pink-100 transition mt-4 sm:mt-0 sm:ml-4"
 				>
 					View Project
 				</a>

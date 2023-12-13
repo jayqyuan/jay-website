@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Jay Yuan | Software Engineer ',
-  description: 'Hi, my name is Jay! I am a software engineer who enjoys creating and developing products that make lives simplier and more meaningful',
+  description: 'Hi, my name is Jay! I am a software engineer',
 }
 
 export default async function RootLayout({
@@ -33,23 +33,23 @@ export default async function RootLayout({
             <Image src='/jylogo.png' width={50} height={50} alt='logo' className='transition-transform hover:scale-110 transform duration-300 ease-in-out'/>
           </Link>
           <div className='flex items-center gap-3 text-m text-gray-600 dark:text-slate-200'>
-              <a href='#about-me' className='m-2 relative group'>
-                <span className=''>Me</span>
+            <Link href='/#about-me'className='m-2 relative group'>      
+                <span>Me</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
-              </a>
-              <a href='#my-work' className='m-2 relative group'>
-                <span className=''>My work</span>
+          </Link>
+              <Link href='/#my-work' className='m-2 relative group'>
+                <span>My work</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
-              </a>
-              <a href='#contact' className='m-2 relative group'>
-                <span className=''>Get in touch</span>
+              </Link>
+              <Link href='/#contact' className='m-2 relative group'>
+                <span>Get in touch</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full"></span>
-              </a>
+              </Link>
             <ThemeSwitcher/>
           </div>
         </header>
         </div>
-        <main className='py-20 max-w-3xl md:mx-2 lg:mx-auto sm:mx-2'>{children}</main>
+        <main className='py-20 max-w-5xl md:mx-3 lg:mx-3 sm:mx-3'>{children}</main>
         </ThemeProvider>
         <footer id='contact'>
           <Contact/>

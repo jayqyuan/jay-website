@@ -4,7 +4,6 @@ import { Project } from "@/types/Project"
 
 export default function ProjectCard({project} : {project: Project}){
     const tech = project.tech
-    console.log(tech)
     return (
     <Link href={`/projects/${project.slug}`} className='border-2 border-gray-500 rounded-lg p-1 hover:scale-105 hover:border-teal-500 transition'>
         {project.cover && (
