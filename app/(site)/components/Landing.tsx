@@ -7,8 +7,9 @@ export default function Landing() {
 	const descriptions = [
 		" full stack developer.",
 		" software engineer.",
-		" volleyball player.",
 		" gamer.",
+        " volleyball player.",
+        " home cook.",
 		" cat dad.",
 	];
 
@@ -30,7 +31,8 @@ export default function Landing() {
 							strings: descriptions,
 							autoStart: true,
 							loop: true,
-							delay: 50, // Adjust the delay as needed
+							delay: 50,
+                            deleteSpeed: 1 // Adjust the delay as needed
 						}}
 					/>
 				</span>
