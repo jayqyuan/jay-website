@@ -40,7 +40,7 @@ export default function Landing() {
 			<button>
 				<a
 					href='#contact'
-					className='text-2xl border-2 border-teal-500 rounded-lg p-1 hover:scale-105 hover:bg-teal-800 transition mt-36 flex item-center p-3'
+					className='text-2xl border-2 border-teal-500 rounded-lg p-1 hover:scale-105 hover:border-teal-400 dark:hover:bg-teal-800 transition mt-36 flex item-center p-3'
 				>
 					GET IN TOUCH
 					<span className='ml-2'>
