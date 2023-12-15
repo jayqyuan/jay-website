@@ -23,11 +23,11 @@ export default function Contact() {
 			<h2 className='mt-24 font-bold text-gray-700 text-5xl dark:text-slate-200'>
 				GET IN TOUCH
 			</h2>
-			<h4 className='text-xl my-5'>
+			<h4 className='text-l my-5'>
 				I am currently seeking an entry-level full stack developer or software engineer position, looking to work
 				on a purposeful product that will be impactful to people.
 			</h4>
-			<h2 className="text-xl mt-5 mb-36">
+			<h2 className="text-l mt-5 mb-36">
 				Reach out to me here : {' '} <span onClick={CopytoClipboard}
 					className='dark:text-teal-400  font-bold text-2xl h-10 w-10 hover:scale-125 transition-all duration-500 cursor-pointer'
 					data-tooltip-id='email-copied'

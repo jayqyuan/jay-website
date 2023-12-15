@@ -6,7 +6,7 @@ export default function About() {
 		<h1 className='mt-36 font-bold text-gray-700 text-5xl dark:text-teal-300'>
             ABOUT JAY YUAN
         </h1>
-        <div className="font-bold text-2xl my-10">
+        <div className="font-bold text-xl my-10">
         <p>
             I am a recent coding bootcamp graduate from New York City with a zest for creating impactful software and applications. I am passionate about designing user-centric applications and am currently learning to develop with Java and Python.
         </p>
