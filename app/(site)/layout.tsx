@@ -7,7 +7,7 @@ import { ThemeProvider } from "./theme-provider";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import Image from "next/image";
 import Contact from "./components/Contact";
-import { Analytics } from "@vercel/analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
 	weight: "200",
