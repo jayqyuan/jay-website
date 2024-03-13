@@ -1,22 +1,23 @@
-import { getPages } from "@/sanity/sanity-utils";
-import "../globals.css";
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import Link from "next/link";
-import { ThemeProvider } from "./theme-provider";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
-import Image from "next/image";
-import Contact from "./components/Contact";
-import { Analytics } from "@vercel/analytics/react";
+import { getPages } from '@/sanity/sanity-utils';
+import '../globals.css';
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import Link from 'next/link';
+import { ThemeProvider } from './theme-provider';
+import { ThemeSwitcher } from './components/ThemeSwitcher';
+import Image from 'next/image';
+import Contact from './components/Contact';
+import { Analytics } from '@vercel/analytics/react';
+import { Button } from '@mui/material';
 
 const poppins = Poppins({
-	weight: "200",
-	subsets: ["latin"],
+	weight: '200',
+	subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-	title: "Jay Yuan | Software Engineer ",
-	description: "Hi, my name is Jay! I am a software engineer",
+	title: 'Jay Yuan | Software Engineer ',
+	description: 'Hi, my name is Jay! I am a software engineer',
 };
 
 export default async function RootLayout({
@@ -30,7 +31,11 @@ export default async function RootLayout({
 			<body
 				className={`${poppins.className} bg-stone-300 dark:bg-gradient-to-r from-slate-800 to-gray-950`}
 			>
-				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+				>
 					<div className='sticky top-0 z-50 p-10 bg-stone-300 dark:bg-slate-800 bg-opacity-70 dark:bg-opacity-70'>
 						<header className='flex items-center justify-between bg-opacity-100'>
 							<Link href='/'>
@@ -43,19 +48,30 @@ export default async function RootLayout({
 								/>
 							</Link>
 							<div className='flex items-center gap-3 text-m text-gray-600 dark:text-slate-200'>
-								<Link href='/#about-me' className='m-2 relative group'>
+								<Link
+									href='/#about-me'
+									className='m-2 relative group'
+								>
 									<span>Me</span>
 									<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full'></span>
 								</Link>
-								<Link href='/#my-work' className='m-2 relative group'>
+								<Link
+									href='/#my-work'
+									className='m-2 relative group'
+								>
 									<span>My work</span>
 									<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full'></span>
 								</Link>
-								<Link href='/#contact' className='m-2 relative group'>
-									<span>Get in touch</span>
-									<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full'></span>
-								</Link>
-								<ThemeSwitcher />
+								<button className='w-fit p-2 rounded-md hover:scale-110 hover:bg-slate-800 hover:text-slate-200 dark:hover:bg-teal-600 active:scale-100 duration-200 bg-slate-200 dark:bg-teal-800'>
+									<Link
+										href='/#contact'
+										className='m-2 relative group'
+									>
+										<span>Contact</span>
+										<span></span>
+									</Link>
+								</button>
+								{/* <ThemeSwitcher /> */}
 							</div>
 						</header>
 					</div>
@@ -64,7 +80,10 @@ export default async function RootLayout({
 						<Analytics />
 					</main>
 				</ThemeProvider>
-				<footer id='contact' className='max-w-5xl mx-auto'>
+				<footer
+					id='contact'
+					className='max-w-5xl mx-auto'
+				>
 					<Contact />
 				</footer>
 			</body>
