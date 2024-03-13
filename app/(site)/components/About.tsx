@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import EastIcon from '@mui/icons-material/East';
 
 export default function About() {
@@ -7,12 +7,24 @@ export default function About() {
 			<h1 className='mt-36 font-bold text-gray-700 text-5xl dark:text-teal-300'>
 				ABOUT JAY YUAN
 			</h1>
-			<div className='font-bold text-xl my-10'>
+			<div className='text-xl my-10'>
+				<h3 className='text-2xl font-bold'>Hi, I am Jay.</h3>
+				<br />
 				<p>
-					I am a recent coding bootcamp graduate from New York City with a zest
-					for creating impactful software and applications. I am passionate
-					about designing user-centric applications and am currently learning to
-					develop with Java and Python.
+					I am a full-stack developer from New York City. While working as a
+					data analyst in media strategy, I developed a fascination for tech.
+				</p>
+				<br />
+				<p>
+					My coding journey began with watching the CS50 course on YouTube. I
+					have learned most of my programming knowledge through online courses,
+					coding bootcamp, and personal projects.
+				</p>
+				<br />
+				<p>
+					The main reasons I decided to become a software engineer are the
+					challenges, continuous learning, thrill of problem-solving,
+					collaboration, and satisfaction of creation via code.
 				</p>
 				<br />
 				<p>
@@ -22,7 +34,7 @@ export default function About() {
 				<button>
 					<a
 						href='#contact'
-						className='text-2xl border-2 border-teal-500 rounded-lg p-1 hover:scale-105 hover:border-teal-400 dark:hover:bg-teal-800 transition mt-36 flex item-center p-3'
+						className='text-2xl border-2 border-teal-500 rounded-lg p-1 hover:scale-105 hover:border-teal-400 dark:hover:bg-teal-800 transition mt-5 flex item-center p-3'
 					>
 						GET IN TOUCH
 						<span className='ml-2'>

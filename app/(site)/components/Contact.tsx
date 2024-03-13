@@ -26,7 +26,7 @@ export default function Contact() {
 			</h2>
 			<h4 className='text-l my-5'>
 				I am currently seeking an entry-level full stack developer or software engineer position, looking to work
-				on a purposeful product that will be impactful to people.
+				on products that will be impactful.
 			</h4>
 			<h2 className="text-l mt-5 mb-36">
 				Reach out to me here : {' '} <span onClick={CopytoClipboard}
