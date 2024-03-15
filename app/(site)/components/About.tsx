@@ -11,7 +11,7 @@ export default function About() {
 				<h1 className='mt-36 font-bold text-gray-700 text-5xl dark:text-teal-300'>
 					ABOUT JAY YUAN
 				</h1>
-				<div className='text-xl my-10'>
+				<div className='text-lg my-10'>
 					<h3 className='text-xl font-bold'>Hi, I am Jay.</h3>
 					<br />
 					<p>
@@ -52,7 +52,7 @@ export default function About() {
 					</a>
 				</button>
 			</div>
-			<div className='max-w-lg mx-auto px-4 py-8'>
+			<div className='max-w-sm mx-auto px-2 py-8'>
 				<div className='h-3/4 rounded-lg overflow-hidden'>
 					<Image
 						src='/self_portrait.jpg'
