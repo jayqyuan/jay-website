@@ -52,7 +52,7 @@ export default async function RootLayout({
 									href='/#about-me'
 									className='m-2 relative group'
 								>
-									<span>Me</span>
+									<span>About</span>
 									<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-600 dark:bg-teal-400 transition-all group-hover:w-full'></span>
 								</Link>
 								<Link
